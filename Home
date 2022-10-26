@@ -1,0 +1,374 @@
+<html>
+<head>
+    <title>Diamond Bazaar</title>
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        html {
+            background-color: #999999;
+            color: white;
+        }
+        .logo {
+            width: 70px;
+            position: absolute;
+            left: 25px;
+            top: 5px;
+            border: 10px;
+            border-radius: 5px;
+        }
+        .header h3 {
+            position: absolute;
+            top: 1px;
+            left: 200px;
+            font-size: 20px;
+        }
+        .body-img img {
+            width: 390px;
+            height: 200px;
+            position: absolute;
+            top: 50px;
+            left: -5px;
+            border: 5px solid white;
+            border-radius: 20px;
+        }
+        .header {
+            background-image: url("https://media4.giphy.com/media/3dYLT5rN7zRgjRWSx3/giphy.webp?cid=6c09b952183aeb1ce316293812d394970742f0ad9aa00f30&rid=giphy.webp&ct=g");
+            background-attachment: fixed;
+            background-position: bottom;
+            height: 50px;
+            width: 400px;
+            padding: 0;
+            margin-left: -10px;
+            margin-right: -10px;
+            margin-top: -10px;
+            border-bottom: 5px solid white;
+            border-radius: 15px;
+        }
+        .btn-box {
+            position: absolute;
+            top: 260px;
+            left: 1px;
+            background-color: blue;
+            border: 5px solid blue;
+            border-radius: 10px;
+            width: 370px;
+            height: 200px;
+        }
+        .box {
+            background-color: #404040;
+            height: 220px;
+            width: 380px;
+            /* border: 5px solid #333333;*/
+            border-radius: 10px;
+            color: black;
+        }
+        .bx-1 {
+            position: absolute;
+            left: 6px;
+            top: 60px;
+            background-image: url("https://media0.giphy.com/media/Jr4bWO1AzigrcHFdWr/giphy.webp?cid=6c09b952dc68938a5b7c0de3e36779b5390465a1e93b69b5&rid=giphy.webp&ct=g");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+        .bx-3 {
+            height: 70px;
+            position: absolute;
+            left: 6px;
+            top: 300px;
+        }
+        .btn {
+            text-decoration: none;
+            color: black;
+            background-color: white;
+            border-radius: 5px;
+            font-size: 20px;
+
+        }
+        .lg {
+            width: 50px;
+            border: 5px solid white;
+            border-radius: 55px;
+
+        }
+        .btn-1 {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            padding: 1px 15px;
+        }
+        .btn-2 {
+            position: absolute;
+            right: 20px;
+            top: 20px;
+            padding: 1px 15px;
+        }
+        .btn-3 {
+            position: absolute;
+            left: 20px;
+            top: 70px;
+            padding: 1px 23px;
+        }
+        .btn-4 {
+            position: absolute;
+            right: 20px;
+            top: 70px;
+            padding: 1px 13px;
+        }
+        .btn-5 {
+            position: absolute;
+            left: 20%;
+            top: 120px;
+            padding: 1px 20px;
+        }
+        .bx-4 {
+            position: absolute;
+            left: 6px;
+            top: 510px;
+            height: 120px;
+        }
+        .logo-2 {
+            width: 80px;
+            border: 15px solid white;
+            border-radius: 30px;
+            position: absolute;
+            left: 15px;
+            top: 20px;
+
+        }
+        .insta {
+            width: 80px;
+            border-radius: 10px;
+            position: absolute;
+            left: 140px;
+            top: 60px;
+            background-color: blue;
+            color: white;
+            text-decoration: none;
+            font-family: Sans-Serif;
+            font-weight: 900;
+            padding: 5px 25px;
+        }
+        .nm {
+            position: absolute;
+            left: 140px;
+            top: 3px;
+            font-family: Comic Sans MS;
+            color: white;
+            font-size: 20px;
+            font-weight: 900;
+
+        }
+        .tick {
+            width: 35px;
+            position: absolute;
+            right: 55px;
+            top: 17px;
+        }
+        .about {
+            font-family: Comic Sans MS;
+            color: white;
+            font-size: 10px;
+            position: absolute;
+            left: 15px;
+            top: 100px;
+        }
+        .bx-5 {
+            position: absolute;
+            left: 6px;
+            top: 640px;
+            width: 185;
+        }
+        .bx-6 {
+            position: absolute;
+            right: 6px;
+            top: 640px;
+            width: 185;
+        }
+        .pro {
+            width: 50px;
+            border: 5px solid white;
+            border-radius: 55px;
+        }
+        .pr-1, .pr-2 {
+            position: absolute;
+            left: 5px;
+            top: 5px;
+        }
+        .id {
+            color: white;
+            font-family: Comic Sans MS;
+            font-size: 11px;
+            font-weight: 500;
+            position: absolute;
+            right: 50px;
+            top: 5px;
+        }
+        .tik {
+            width: 15px;
+            position: absolute;
+            right: 30px;
+            top: 15px;
+        }
+        .ig {
+            font-family: Sans-Serif;
+            font-weight: 800;
+            color: white;
+            background-color: blue;
+            border: 2px solid blue;
+            border-radius: 10px;
+            position: absolute;
+            right: 30px;
+            top: 35px;
+            padding: 1px 15px;
+            text-decoration: none;
+        }
+        .bio {
+            color: white;
+            font-family: Comic Sans MS;
+            font-size: 20px;
+            font-weight: 700;
+            position: absolute;
+            left: 5px;
+            top: 50px;
+        }
+        .footer {
+            padding: 0;
+            margin: 0;
+            width: 400px;
+            height: 100px;
+            background-color: #404040;
+            position: absolute;
+            top: 870px;
+            margin-left: -10px;
+            margin-right: -10px;
+            border-top: 5px solid white;
+            border-radius: 15px;
+            align-items: center;
+            text-align: center;
+            font-family: Times New Roman;
+        }
+        .header h3, p {
+            font-family: Impact;
+        }
+        .header h3 {
+            position: absolute;
+            left: 200px;
+            top: -15px;
+        }
+        .header p {
+            position: absolute;
+            left: 20px;
+            top: -5;
+        }
+        .img-btn {
+            width: 90px;
+            height: 50px;
+            border: 2px solid white;
+            border-radius: 55px;
+        }
+        .bx-7 {
+            height: 70px;
+            position: absolute;
+            left: 6px;
+            top: 375px;
+
+        }
+        .bx-8 {
+            height: 45px;
+            position: absolute;
+            left: 6px;
+            top: 455px;
+            background-image: url("https://i.giphy.com/media/VRKheDy4DkBMrQm66p/giphy.gif");
+        }
+        .nw {
+            width: 250px;
+            height: 45px;
+            position: absolute;
+            top: 0;
+            left: 60px;
+            border-radius: 10px;
+        }
+        .bnb {
+            position: absolute;
+            top: 5px;
+            left: 10px;
+        }
+
+    </style>
+
+
+    <div class="header">
+        <img class="logo" src="https://dhgf5mcbrms62.cloudfront.net/62584281/header-WUTHwU/27Jcc69-600x600.webp">
+        <h3>Hey<h3\>
+            <p>
+                whatsapp
+            </p>
+        </div>
+            <div class="box bx-1">
+
+            </div>
+            <div class="box bx-2">
+                <h3>Hello World iam 2</h3>
+            </div>
+            <div class="box bx-3">
+                <a class="bnb-1" href="#"><img class="img-btn"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-FlREOxi86NeHvkIbVZr8AB9LCCplLZFMkw&usqp=CAU"></a>
+                <a class="bnb-2" href="#"><img class="img-btn" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQOvZlZh73VzcJkD3anjzhsgGvfa6hiVcVUw&usqp=CAU"></a>
+                <a class="bnb-3" href="#"><img class="img-btn" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqyc4WCyLo_lz2zA7lOeqeI2UJcSLCmwJn1g&usqp=CAU"></a>
+
+            </div>
+            <div class="box bx-7">
+                <a class="bnb-4" href="#"><img class="img-btn" src="https://is5-ssl.mzstatic.com/image/thumb/Purple122/v4/37/e4/bf/37e4bfd9-9a9e-115a-6693-039d3e7c1c7b/AppIcon-0-1x_U007emarketing-0-6-0-85-220.png/256x256bb.jpg"></a>
+                <a class="bnb-5" href="#"><img class="img-btn" src=""></a>
+
+            </div>
+            <div class="box bx-8">
+                <img class="nw" src="https://c.tenor.com/4G0PFR2x-rEAAAAC/im-in-the-family-business-boss-baby.gif">
+            </div>
+            <div class="box bx-4">
+                <img class="logo-2" src="https://dhgf5mcbrms62.cloudfront.net/62584281/header-WUTHwU/27Jcc69-600x600.webp">
+                <a class="insta" href="#">Follow us </a>
+                <p class="nm">
+                    Diamond Bazaar
+                </p>
+                <img class="tick" src="https://parspng.com/wp-content/uploads/2022/07/tickpng.parspng.com-4-300x300.png">
+            </div>
+            <div class="box bx-5">
+                <p class="bio">
+                    Musabir<br>Founder & CEO
+                </p>
+                <img class="pro pr-1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmPnncIpkrew89MrFbGDPxtMUUs7FuW4LEvQ&usqp=CAU">
+                <p class="id">
+                    noway4577
+                </p>
+                <a class="ig" href="#">
+                    Follow
+                </a>
+                <img class="tik" src="https://parspng.com/wp-content/uploads/2022/07/tickpng.parspng.com-4-300x300.png">
+            </div>
+            <div class="box bx-6">
+                <p class="bio">
+                    Devraj<br>Co-Founder & MD
+                </p>
+                <img class="pro pr-2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsDUQHjctTSAkhmCoJqtTtrM__gFhVKqbGLg&usqp=CAU">
+                <p class="id">
+                    mr_tom
+                </p>
+                <a class="ig" href="#">
+                    Follow
+                </a>
+                <img class="tik" src="https://parspng.com/wp-content/uploads/2022/07/tickpng.parspng.com-4-300x300.png">
+            </div>
+            <div class="footer">
+                <p>
+                    ©All rights are reserved 2022-2023
+                </p>
+                <p>
+                    App Coded & Developed by Musabir Rousan
+                </p>
+            </div>
+        </body>
+    </html>
